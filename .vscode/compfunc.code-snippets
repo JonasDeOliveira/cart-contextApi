@@ -1,0 +1,20 @@
+{
+	"Print to console": {
+		"scope": "javascript",
+		"prefix": "compfunc",
+		"body": [
+			"import React from 'react';",
+			"",
+			"function Comp() {",
+			"",
+  			"    return (",
+			"            <>",
+			"            </>",
+  			"    );",
+			"}",
+			"",
+			"export default Comp;",
+		],
+		"description": "Log output to console"
+	}
+}
