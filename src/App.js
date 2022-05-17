@@ -3,17 +3,15 @@ import {
 } from "react-router-dom";
 import { Routes } from './routes'
 import './App.css';
-import CartContext, { CartProvider } from './context/cart.provider'
+import Contexts from './context'
 
 function App(props) {
   return (
-    <CartProvider>
+    <Contexts>
       <Router>
-        <Routes/>
+        <Routes />
       </Router>
-    </CartProvider>
-
-
+    </Contexts>
   );
 }
 

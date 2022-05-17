@@ -3,10 +3,11 @@ import CartContext from '../context/cart.provider'
 
 function MiniCart() {
 
-    const { cartQty } = useContext(CartContext)
+    const { cartQty, getCartQty } = useContext(CartContext)
 
     useEffect(()=> {
-    }) 
+        getCartQty()
+    }, []) 
 
 
     return (

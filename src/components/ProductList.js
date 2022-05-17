@@ -8,14 +8,17 @@ function ProductList(props) {
 
     const listProducts = () => {
         return (
-            products.length == 0 
+            products.length == 0
             ? <h2>Carrinho Vazio</h2>
             : products.map((item) => {
                 return (
                     <li key={item.id}>
                         <div>{item.nome}</div>
                         <div>{item.preco}</div>
-                        <button onClick={() => addToCart(item)}>Comprar</button>
+                        { props.cart 
+                            ? ''
+                            : <button onClick={() => addToCart(item)}>Comprar</button>
+                        }
                     </li>
                 )
             })
